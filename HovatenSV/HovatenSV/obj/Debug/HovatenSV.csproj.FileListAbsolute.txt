@@ -1,0 +1,13 @@
+C:\Users\Admin\source\repos\HovatenSV\HovatenSV\bin\Debug\HovatenSV.exe.config
+C:\Users\Admin\source\repos\HovatenSV\HovatenSV\bin\Debug\HovatenSV.exe
+C:\Users\Admin\source\repos\HovatenSV\HovatenSV\bin\Debug\HovatenSV.pdb
+C:\Users\Admin\source\repos\HovatenSV\HovatenSV\obj\Debug\HovatenSV.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\HovatenSV\HovatenSV\obj\Debug\HovatenSV.Frm1_HovatenSV.resources
+C:\Users\Admin\source\repos\HovatenSV\HovatenSV\obj\Debug\HovatenSV.FrmDangNhap.resources
+C:\Users\Admin\source\repos\HovatenSV\HovatenSV\obj\Debug\HovatenSV.Properties.Resources.resources
+C:\Users\Admin\source\repos\HovatenSV\HovatenSV\obj\Debug\HovatenSV.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\HovatenSV\HovatenSV\obj\Debug\HovatenSV.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\HovatenSV\HovatenSV\obj\Debug\HovatenSV.exe
+C:\Users\Admin\source\repos\HovatenSV\HovatenSV\obj\Debug\HovatenSV.pdb
+C:\Users\Admin\source\repos\HovatenSV\HovatenSV\obj\Debug\HovatenSV.FrmDMTAISAN.resources
+C:\Users\Admin\source\repos\HovatenSV\HovatenSV\obj\Debug\HovatenSV.FrmTimKiem1.resources

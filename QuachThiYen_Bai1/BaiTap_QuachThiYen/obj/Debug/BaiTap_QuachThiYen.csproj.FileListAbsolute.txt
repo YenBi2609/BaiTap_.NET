@@ -1,0 +1,17 @@
+C:\Users\Admin\source\repos\BaiTap_QuachThiYen\BaiTap_QuachThiYen\bin\Debug\BaiTap_QuachThiYen.exe.config
+C:\Users\Admin\source\repos\BaiTap_QuachThiYen\BaiTap_QuachThiYen\bin\Debug\BaiTap_QuachThiYen.exe
+C:\Users\Admin\source\repos\BaiTap_QuachThiYen\BaiTap_QuachThiYen\bin\Debug\BaiTap_QuachThiYen.pdb
+C:\Users\Admin\source\repos\BaiTap_QuachThiYen\BaiTap_QuachThiYen\obj\Debug\BaiTap_QuachThiYen.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\BaiTap_QuachThiYen\BaiTap_QuachThiYen\obj\Debug\BaiTap_QuachThiYen.Login.resources
+C:\Users\Admin\source\repos\BaiTap_QuachThiYen\BaiTap_QuachThiYen\obj\Debug\BaiTap_QuachThiYen.Properties.Resources.resources
+C:\Users\Admin\source\repos\BaiTap_QuachThiYen\BaiTap_QuachThiYen\obj\Debug\BaiTap_QuachThiYen.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\BaiTap_QuachThiYen\BaiTap_QuachThiYen\obj\Debug\BaiTap_QuachThiYen.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\BaiTap_QuachThiYen\BaiTap_QuachThiYen\obj\Debug\BaiTap_QuachThiYen.exe
+C:\Users\Admin\source\repos\BaiTap_QuachThiYen\BaiTap_QuachThiYen\obj\Debug\BaiTap_QuachThiYen.pdb
+C:\Users\Admin\source\repos\BaiTap_QuachThiYen\BaiTap_QuachThiYen\obj\Debug\BaiTap_QuachThiYen.FrmMain.resources
+C:\Users\Admin\source\repos\BaiTap_QuachThiYen\BaiTap_QuachThiYen\obj\Debug\BaiTap_QuachThiYen.GiaiPTB2.resources
+C:\Users\Admin\source\repos\BaiTap_QuachThiYen\BaiTap_QuachThiYen\obj\Debug\BaiTap_QuachThiYen.Data.resources
+C:\Users\Admin\source\repos\BaiTap_QuachThiYen\BaiTap_QuachThiYen\obj\Debug\BaiTap_QuachThiYen.TH_Control.resources
+C:\Users\Admin\source\repos\BaiTap_QuachThiYen\BaiTap_QuachThiYen\obj\Debug\BaiTap_QuachThiYen.Form2.resources
+C:\Users\Admin\source\repos\BaiTap_QuachThiYen\BaiTap_QuachThiYen\obj\Debug\BaiTap_QuachThiYen.FormTinh.resources
+C:\Users\Admin\source\repos\BaiTap_QuachThiYen\BaiTap_QuachThiYen\obj\Debug\BaiTap_QuachThiYen.DataTest.resources
