@@ -1,0 +1,11 @@
+C:\Users\Admin\source\repos\QLNS_QLYLUONG\QLNS_QLYLUONG\bin\Debug\QLNS_QLYLUONG.exe.config
+C:\Users\Admin\source\repos\QLNS_QLYLUONG\QLNS_QLYLUONG\bin\Debug\QLNS_QLYLUONG.exe
+C:\Users\Admin\source\repos\QLNS_QLYLUONG\QLNS_QLYLUONG\bin\Debug\QLNS_QLYLUONG.pdb
+C:\Users\Admin\source\repos\QLNS_QLYLUONG\QLNS_QLYLUONG\obj\Debug\QLNS_QLYLUONG.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\QLNS_QLYLUONG\QLNS_QLYLUONG\obj\Debug\QLNS_QLYLUONG.frmMain.resources
+C:\Users\Admin\source\repos\QLNS_QLYLUONG\QLNS_QLYLUONG\obj\Debug\QLNS_QLYLUONG.frmLuong.resources
+C:\Users\Admin\source\repos\QLNS_QLYLUONG\QLNS_QLYLUONG\obj\Debug\QLNS_QLYLUONG.Properties.Resources.resources
+C:\Users\Admin\source\repos\QLNS_QLYLUONG\QLNS_QLYLUONG\obj\Debug\QLNS_QLYLUONG.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\QLNS_QLYLUONG\QLNS_QLYLUONG\obj\Debug\QLNS_QLYLUONG.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\QLNS_QLYLUONG\QLNS_QLYLUONG\obj\Debug\QLNS_QLYLUONG.exe
+C:\Users\Admin\source\repos\QLNS_QLYLUONG\QLNS_QLYLUONG\obj\Debug\QLNS_QLYLUONG.pdb
