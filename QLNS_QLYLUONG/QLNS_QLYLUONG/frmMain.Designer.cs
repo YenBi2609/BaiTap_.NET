@@ -71,6 +71,9 @@ namespace QLNS_QLYLUONG
             this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.qUẢNLÝNHÂNSỰToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuLuong = new System.Windows.Forms.ToolStripMenuItem();
+            this.tÌMKIẾMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.newToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -83,8 +86,6 @@ namespace QLNS_QLYLUONG
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.qUẢNLÝNHÂNSỰToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuLuong = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -431,6 +432,29 @@ namespace QLNS_QLYLUONG
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.aboutToolStripMenuItem.Text = "&About ... ...";
             // 
+            // qUẢNLÝNHÂNSỰToolStripMenuItem
+            // 
+            this.qUẢNLÝNHÂNSỰToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuLuong,
+            this.tÌMKIẾMToolStripMenuItem});
+            this.qUẢNLÝNHÂNSỰToolStripMenuItem.Name = "qUẢNLÝNHÂNSỰToolStripMenuItem";
+            this.qUẢNLÝNHÂNSỰToolStripMenuItem.Size = new System.Drawing.Size(123, 20);
+            this.qUẢNLÝNHÂNSỰToolStripMenuItem.Text = "QUẢN LÝ NHÂN SỰ";
+            // 
+            // mnuLuong
+            // 
+            this.mnuLuong.Name = "mnuLuong";
+            this.mnuLuong.Size = new System.Drawing.Size(180, 22);
+            this.mnuLuong.Text = "QUẢN LÝ LƯƠNG";
+            this.mnuLuong.Click += new System.EventHandler(this.mnuLuong_Click);
+            // 
+            // tÌMKIẾMToolStripMenuItem
+            // 
+            this.tÌMKIẾMToolStripMenuItem.Name = "tÌMKIẾMToolStripMenuItem";
+            this.tÌMKIẾMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tÌMKIẾMToolStripMenuItem.Text = "TÌM KIẾM";
+            this.tÌMKIẾMToolStripMenuItem.Click += new System.EventHandler(this.tÌMKIẾMToolStripMenuItem_Click);
+            // 
             // toolStrip
             // 
             this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -530,21 +554,6 @@ namespace QLNS_QLYLUONG
             this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
             this.toolStripStatusLabel.Text = "Status";
             // 
-            // qUẢNLÝNHÂNSỰToolStripMenuItem
-            // 
-            this.qUẢNLÝNHÂNSỰToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuLuong});
-            this.qUẢNLÝNHÂNSỰToolStripMenuItem.Name = "qUẢNLÝNHÂNSỰToolStripMenuItem";
-            this.qUẢNLÝNHÂNSỰToolStripMenuItem.Size = new System.Drawing.Size(123, 20);
-            this.qUẢNLÝNHÂNSỰToolStripMenuItem.Text = "QUẢN LÝ NHÂN SỰ";
-            // 
-            // mnuLuong
-            // 
-            this.mnuLuong.Name = "mnuLuong";
-            this.mnuLuong.Size = new System.Drawing.Size(180, 22);
-            this.mnuLuong.Text = "QUẢN LÝ LƯƠNG";
-            this.mnuLuong.Click += new System.EventHandler(this.mnuLuong_Click);
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -626,6 +635,7 @@ namespace QLNS_QLYLUONG
         private System.Windows.Forms.ToolTip toolTip;
         private System.Windows.Forms.ToolStripMenuItem qUẢNLÝNHÂNSỰToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mnuLuong;
+        private System.Windows.Forms.ToolStripMenuItem tÌMKIẾMToolStripMenuItem;
     }
 }
 

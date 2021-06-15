@@ -109,5 +109,11 @@ namespace QLNS_QLYLUONG
             frmLuong f = new frmLuong();
             f.Show();
         }
+
+        private void tÌMKIẾMToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTimKiem f = new frmTimKiem();
+            f.Show();
+        }
     }
 }

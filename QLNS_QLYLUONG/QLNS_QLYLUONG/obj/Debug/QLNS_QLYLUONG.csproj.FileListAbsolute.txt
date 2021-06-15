@@ -10,3 +10,4 @@ C:\Users\Admin\source\repos\QLNS_QLYLUONG\QLNS_QLYLUONG\obj\Debug\QLNS_QLYLUONG.
 C:\Users\Admin\source\repos\QLNS_QLYLUONG\QLNS_QLYLUONG\obj\Debug\QLNS_QLYLUONG.exe
 C:\Users\Admin\source\repos\QLNS_QLYLUONG\QLNS_QLYLUONG\obj\Debug\QLNS_QLYLUONG.pdb
 C:\Users\Admin\source\repos\QLNS_QLYLUONG\QLNS_QLYLUONG\obj\Debug\QLNS_QLYLUONG.frmTest.resources
+C:\Users\Admin\source\repos\QLNS_QLYLUONG\QLNS_QLYLUONG\obj\Debug\QLNS_QLYLUONG.frmTimKiem.resources

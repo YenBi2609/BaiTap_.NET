@@ -335,6 +335,7 @@ namespace QLNS_QLYLUONG
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label4);
+            this.IsMdiContainer = true;
             this.Name = "frmLuong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmNhanVien";

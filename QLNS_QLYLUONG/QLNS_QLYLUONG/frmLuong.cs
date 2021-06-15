@@ -39,8 +39,6 @@ namespace QLNS_QLYLUONG
             txtThucLinh.DataBindings.Clear();
             txtThucLinh.DataBindings.Add("Text", dataGrid.DataSource, "thuc_linh");
 
-            
-
         }
         public void Load_Dulieu_Luong()
         {
@@ -103,8 +101,8 @@ namespace QLNS_QLYLUONG
         private void btnChen_Click(object sender, EventArgs e)
         {
             DialogResult thongbao;
-            thongbao = MessageBox.Show("Bạn có chắc chắn muốn chèn ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (thongbao == DialogResult.Yes)
+            thongbao = MessageBox.Show("Bạn có chắc chắn muốn chèn không ?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (thongbao == DialogResult.OK)
             {
                 string sql_chen = "Insert into LUONG values('" + txtMaLuong.Text + "' , '" + cboMaNV.Text + "'," + txtLuongCoBan.Value + "," + txtCong.Value + "," + txtTru.Value + "," + txtThucLinh.Value + ")";
                 kn.Execute(sql_chen);
@@ -122,7 +120,7 @@ namespace QLNS_QLYLUONG
         private void btnSua_Click(object sender, EventArgs e)
         {
             DialogResult thongbao;
-            thongbao = MessageBox.Show("Bạn chắc chắn muốn sửa ?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            thongbao = MessageBox.Show("Bạn có chắc chắn muốn sửa không ?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             if (thongbao == DialogResult.OK)
             {
 
@@ -137,8 +135,8 @@ namespace QLNS_QLYLUONG
         private void btnXoa_Click(object sender, EventArgs e)
         {
             DialogResult thongbao;
-            thongbao = MessageBox.Show("Bạn chắc chắn muốn xóa ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Hand);
-            if (thongbao == DialogResult.Yes)
+            thongbao = MessageBox.Show("Bạn có chắc chắn muốn xóa không ?", "Cảnh báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Hand);
+            if (thongbao == DialogResult.OK)
             {
                 kn.Execute("Delete LUONG where ma_luong = '" + txtMaLuong.Text + "'");
                 Load_Dulieu_Luong();

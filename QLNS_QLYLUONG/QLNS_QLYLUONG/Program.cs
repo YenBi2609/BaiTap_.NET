@@ -16,7 +16,7 @@ namespace QLNS_QLYLUONG
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLuong());
+            Application.Run(new frmMain());
         }
     }
 }
