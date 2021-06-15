@@ -102,10 +102,14 @@ namespace QLNS_QLYLUONG
         }
         private void btnChen_Click(object sender, EventArgs e)
         {
-  
-            string sql_chen = "Insert into LUONG values('" + txtMaLuong.Text + "' , '" + cboMaNV.Text + "'," + txtLuongCoBan.Value + "," + txtCong.Value + ","  + txtTru.Value +"," + txtThucLinh.Value +")";
-            kn.Execute(sql_chen);
-            Load_Dulieu_Luong();
+            DialogResult thongbao;
+            thongbao = MessageBox.Show("Bạn có chắc chắn muốn chèn ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (thongbao == DialogResult.Yes)
+            {
+                string sql_chen = "Insert into LUONG values('" + txtMaLuong.Text + "' , '" + cboMaNV.Text + "'," + txtLuongCoBan.Value + "," + txtCong.Value + "," + txtTru.Value + "," + txtThucLinh.Value + ")";
+                kn.Execute(sql_chen);
+                Load_Dulieu_Luong();
+            }
         }
         //        create table LUONG(
         //ma_luong char(10) primary key,
@@ -117,17 +121,28 @@ namespace QLNS_QLYLUONG
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            string sql_sua = "update LUONG set ma_NV  ='" + cboMaNV.Text + "' ";
-            sql_sua = sql_sua + ", luong_co_ban =" + txtLuongCoBan.Value;
-            sql_sua = sql_sua + ", khoan_cong_them =" + txtCong.Value + ", khoan_tru =" + txtTru.Value + ", thuc_linh ="+txtThucLinh.Value+ " where ma_luong = '" + txtMaLuong.Text + "' ";
-            kn.Execute(sql_sua);
-            Load_Dulieu_Luong();
+            DialogResult thongbao;
+            thongbao = MessageBox.Show("Bạn chắc chắn muốn sửa ?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            if (thongbao == DialogResult.OK)
+            {
+
+                string sql_sua = "update LUONG set ma_NV  ='" + cboMaNV.Text + "' ";
+                sql_sua = sql_sua + ", luong_co_ban =" + txtLuongCoBan.Value;
+                sql_sua = sql_sua + ", khoan_cong_them =" + txtCong.Value + ", khoan_tru =" + txtTru.Value + ", thuc_linh =" + txtThucLinh.Value + " where ma_luong = '" + txtMaLuong.Text + "' ";
+                kn.Execute(sql_sua);
+                Load_Dulieu_Luong();
+            }
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            kn.Execute("Delete LUONG where ma_luong = '" + txtMaLuong.Text + "'");
-            Load_Dulieu_Luong();
+            DialogResult thongbao;
+            thongbao = MessageBox.Show("Bạn chắc chắn muốn xóa ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Hand);
+            if (thongbao == DialogResult.Yes)
+            {
+                kn.Execute("Delete LUONG where ma_luong = '" + txtMaLuong.Text + "'");
+                Load_Dulieu_Luong();
+            }
         }
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
