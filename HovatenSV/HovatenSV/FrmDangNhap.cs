@@ -14,6 +14,7 @@ namespace HovatenSV
 {
     public partial class FrmDangNhap : Form
     {
+        public static string quyentruycap;
         Ketnoi kn = new Ketnoi(); // khoi tao class
         public FrmDangNhap()
         {
@@ -34,6 +35,30 @@ namespace HovatenSV
                 this.Close();
             }
         }
+        public void getTK(string TK, string MK)
+        {
+            try
+            {
+
+                DataTable dt = new DataTable();
+                dt = kn.Lay_Dulieu("Select * from HETHONG where TENDN='" + TK + "'and MATKHAU ='" + MK + "'");
+
+                if (dt != null)
+                {
+                    foreach (DataRow dr in dt.Rows)
+                    {
+
+                        // Lấy quyền truy cập
+                        quyentruycap = dr["QUYEN"].ToString();
+                    }
+                }
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Lỗi xảy ra khi truy vấn dữ liệu hoặc kết nối với server thất bại !");
+            }
+        }
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
@@ -46,6 +71,7 @@ namespace HovatenSV
             if(datRed.Read() == true)
             {
                 MessageBox.Show("Đăng nhập thành công!");
+                getTK(TN,MK);
                 Form FM = new Frm1_HovatenSV();
                 FM.Show();
                 this.Hide();

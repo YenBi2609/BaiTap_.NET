@@ -31,11 +31,11 @@ namespace HovatenSV
         {
             this.components = new System.ComponentModel.Container();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.dANHMỤCTÀISẢNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dmts = new System.Windows.Forms.ToolStripMenuItem();
+            this.tÌMKIẾMLOẠITÀISẢNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.tÌMKIẾMLOẠITÀISẢNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -43,7 +43,7 @@ namespace HovatenSV
             // menuStrip
             // 
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dANHMỤCTÀISẢNToolStripMenuItem,
+            this.dmts,
             this.tÌMKIẾMLOẠITÀISẢNToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
@@ -51,12 +51,19 @@ namespace HovatenSV
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
             // 
-            // dANHMỤCTÀISẢNToolStripMenuItem
+            // dmts
             // 
-            this.dANHMỤCTÀISẢNToolStripMenuItem.Name = "dANHMỤCTÀISẢNToolStripMenuItem";
-            this.dANHMỤCTÀISẢNToolStripMenuItem.Size = new System.Drawing.Size(128, 20);
-            this.dANHMỤCTÀISẢNToolStripMenuItem.Text = "DANH MỤC TÀI SẢN";
-            this.dANHMỤCTÀISẢNToolStripMenuItem.Click += new System.EventHandler(this.dANHMỤCTÀISẢNToolStripMenuItem_Click);
+            this.dmts.Name = "dmts";
+            this.dmts.Size = new System.Drawing.Size(128, 20);
+            this.dmts.Text = "DANH MỤC TÀI SẢN";
+            this.dmts.Click += new System.EventHandler(this.dANHMỤCTÀISẢNToolStripMenuItem_Click);
+            // 
+            // tÌMKIẾMLOẠITÀISẢNToolStripMenuItem
+            // 
+            this.tÌMKIẾMLOẠITÀISẢNToolStripMenuItem.Name = "tÌMKIẾMLOẠITÀISẢNToolStripMenuItem";
+            this.tÌMKIẾMLOẠITÀISẢNToolStripMenuItem.Size = new System.Drawing.Size(143, 20);
+            this.tÌMKIẾMLOẠITÀISẢNToolStripMenuItem.Text = "TÌM KIẾM LOẠI TÀI SẢN";
+            this.tÌMKIẾMLOẠITÀISẢNToolStripMenuItem.Click += new System.EventHandler(this.tÌMKIẾMLOẠITÀISẢNToolStripMenuItem_Click);
             // 
             // statusStrip
             // 
@@ -74,13 +81,6 @@ namespace HovatenSV
             this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
             this.toolStripStatusLabel.Text = "Status";
             // 
-            // tÌMKIẾMLOẠITÀISẢNToolStripMenuItem
-            // 
-            this.tÌMKIẾMLOẠITÀISẢNToolStripMenuItem.Name = "tÌMKIẾMLOẠITÀISẢNToolStripMenuItem";
-            this.tÌMKIẾMLOẠITÀISẢNToolStripMenuItem.Size = new System.Drawing.Size(143, 20);
-            this.tÌMKIẾMLOẠITÀISẢNToolStripMenuItem.Text = "TÌM KIẾM LOẠI TÀI SẢN";
-            this.tÌMKIẾMLOẠITÀISẢNToolStripMenuItem.Click += new System.EventHandler(this.tÌMKIẾMLOẠITÀISẢNToolStripMenuItem_Click);
-            // 
             // Frm1_HovatenSV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -92,6 +92,7 @@ namespace HovatenSV
             this.MainMenuStrip = this.menuStrip;
             this.Name = "Frm1_HovatenSV";
             this.Text = "Frm1_HovatenSV";
+            this.Load += new System.EventHandler(this.Frm1_HovatenSV_Load);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.statusStrip.ResumeLayout(false);
@@ -107,7 +108,7 @@ namespace HovatenSV
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
         private System.Windows.Forms.ToolTip toolTip;
-        private System.Windows.Forms.ToolStripMenuItem dANHMỤCTÀISẢNToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dmts;
         private System.Windows.Forms.ToolStripMenuItem tÌMKIẾMLOẠITÀISẢNToolStripMenuItem;
     }
 }

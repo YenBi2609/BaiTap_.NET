@@ -115,5 +115,10 @@ namespace HovatenSV
             Form f = new FrmTimKiem1();
             f.Show();
         }
+
+        private void Frm1_HovatenSV_Load(object sender, EventArgs e)
+        {
+            if (FrmDangNhap.quyentruycap.Equals("1")) dmts.Enabled = false;
+        }
     }
 }
