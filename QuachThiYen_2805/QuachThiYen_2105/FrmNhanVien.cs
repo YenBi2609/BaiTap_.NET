@@ -48,13 +48,13 @@ namespace QuachThiYen_2105
             DataTable dta = new DataTable();
             dta = kn.Lay_Dulieu("select * from CHUCVU");
             cboChucVu.DataSource = dta;
-<<<<<<< HEAD
+
             cboChucVu.DisplayMember = "TENCV";
             cboChucVu.ValueMember = "TENCV";
-=======
+
             cboChucVu.DisplayMember = "MACV";
             cboChucVu.ValueMember = "MACV";
->>>>>>> ce14b3ba1ffbd613f13ee2ee691906aba06e9957
+
         }
         public void Load_Dulieu_PhongBan()
         {

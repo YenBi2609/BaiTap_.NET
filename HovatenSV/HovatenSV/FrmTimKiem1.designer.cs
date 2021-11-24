@@ -44,7 +44,7 @@ namespace HovatenSV
             // 
             this.radMaTS.AutoSize = true;
             this.radMaTS.Checked = true;
-            this.radMaTS.Location = new System.Drawing.Point(101, 96);
+            this.radMaTS.Location = new System.Drawing.Point(72, 96);
             this.radMaTS.Name = "radMaTS";
             this.radMaTS.Size = new System.Drawing.Size(105, 17);
             this.radMaTS.TabIndex = 0;
@@ -90,7 +90,7 @@ namespace HovatenSV
             // radLoaiTS
             // 
             this.radLoaiTS.AutoSize = true;
-            this.radLoaiTS.Location = new System.Drawing.Point(99, 162);
+            this.radLoaiTS.Location = new System.Drawing.Point(70, 162);
             this.radLoaiTS.Name = "radLoaiTS";
             this.radLoaiTS.Size = new System.Drawing.Size(124, 17);
             this.radLoaiTS.TabIndex = 0;

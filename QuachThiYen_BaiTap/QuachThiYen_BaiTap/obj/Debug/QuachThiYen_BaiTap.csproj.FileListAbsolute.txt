@@ -28,3 +28,7 @@ C:\Users\Admin\source\repos\QuachThiYen_BaiTap\QuachThiYen_BaiTap\obj\Debug\Quac
 C:\Users\Admin\source\repos\QuachThiYen_BaiTap\QuachThiYen_BaiTap\obj\Debug\QuachThiYen_BaiTap.csproj.CopyComplete
 C:\Users\Admin\source\repos\QuachThiYen_BaiTap\QuachThiYen_BaiTap\obj\Debug\QuachThiYen_BaiTap.exe
 C:\Users\Admin\source\repos\QuachThiYen_BaiTap\QuachThiYen_BaiTap\obj\Debug\QuachThiYen_BaiTap.pdb
+C:\Users\Admin\source\repos\QuachThiYen_BaiTap\QuachThiYen_BaiTap\bin\Debug\EntityFramework.dll
+C:\Users\Admin\source\repos\QuachThiYen_BaiTap\QuachThiYen_BaiTap\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\source\repos\QuachThiYen_BaiTap\QuachThiYen_BaiTap\bin\Debug\EntityFramework.xml
+C:\Users\Admin\source\repos\QuachThiYen_BaiTap\QuachThiYen_BaiTap\bin\Debug\EntityFramework.SqlServer.xml

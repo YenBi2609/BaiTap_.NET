@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QUANLY123Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CHUCVU">
+    <Key>
+      <PropertyRef Name="MACV" />
+    </Key>
+    <Property Name="MACV" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="TENCV" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Name="PHUCAP" Type="Double" />
+    <NavigationProperty Name="NHANVIENs" Relationship="Self.FK__NHANVIEN__MACV__2A4B4B5E" FromRole="CHUCVU" ToRole="NHANVIEN" />
+  </EntityType>
+  <EntityType Name="DMKHOA">
+    <Key>
+      <PropertyRef Name="MAKHOA" />
+    </Key>
+    <Property Name="MAKHOA" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="TENKHOA" Type="String" MaxLength="40" FixedLength="true" Unicode="false" />
+    <Property Name="DIACHI" Type="String" MaxLength="100" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="NHANVIEN">
+    <Key>
+      <PropertyRef Name="MANV" />
+    </Key>
+    <Property Name="MANV" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="TENNV" Type="String" MaxLength="60" FixedLength="true" Unicode="false" />
+    <Property Name="HESO_LUONG" Type="Double" />
+    <Property Name="MACV" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="MAPB" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="CHUCVU" Relationship="Self.FK__NHANVIEN__MACV__2A4B4B5E" FromRole="NHANVIEN" ToRole="CHUCVU" />
+    <NavigationProperty Name="PHONGBAN" Relationship="Self.FK__NHANVIEN__MAPB__2B3F6F97" FromRole="NHANVIEN" ToRole="PHONGBAN" />
+  </EntityType>
+  <EntityType Name="PHONGBAN">
+    <Key>
+      <PropertyRef Name="MAPB" />
+    </Key>
+    <Property Name="MAPB" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="TENPB" Type="String" MaxLength="40" FixedLength="true" Unicode="false" />
+    <Property Name="DIACHI" Type="String" MaxLength="100" FixedLength="true" Unicode="false" />
+    <Property Name="CHUCNANG" Type="String" MaxLength="100" FixedLength="true" Unicode="false" />
+    <Property Name="SODT" Type="String" MaxLength="12" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="NHANVIENs" Relationship="Self.FK__NHANVIEN__MAPB__2B3F6F97" FromRole="PHONGBAN" ToRole="NHANVIEN" />
+  </EntityType>
+  <Association Name="FK__NHANVIEN__MACV__2A4B4B5E">
+    <End Role="CHUCVU" Type="Self.CHUCVU" Multiplicity="0..1" />
+    <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CHUCVU">
+        <PropertyRef Name="MACV" />
+      </Principal>
+      <Dependent Role="NHANVIEN">
+        <PropertyRef Name="MACV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__NHANVIEN__MAPB__2B3F6F97">
+    <End Role="PHONGBAN" Type="Self.PHONGBAN" Multiplicity="0..1" />
+    <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PHONGBAN">
+        <PropertyRef Name="MAPB" />
+      </Principal>
+      <Dependent Role="NHANVIEN">
+        <PropertyRef Name="MAPB" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QUANLY123Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CHUCVUs" EntityType="Self.CHUCVU" />
+    <EntitySet Name="DMKHOAs" EntityType="Self.DMKHOA" />
+    <EntitySet Name="NHANVIENs" EntityType="Self.NHANVIEN" />
+    <EntitySet Name="PHONGBANs" EntityType="Self.PHONGBAN" />
+    <AssociationSet Name="FK__NHANVIEN__MACV__2A4B4B5E" Association="Self.FK__NHANVIEN__MACV__2A4B4B5E">
+      <End Role="CHUCVU" EntitySet="CHUCVUs" />
+      <End Role="NHANVIEN" EntitySet="NHANVIENs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__NHANVIEN__MAPB__2B3F6F97" Association="Self.FK__NHANVIEN__MAPB__2B3F6F97">
+      <End Role="PHONGBAN" EntitySet="PHONGBANs" />
+      <End Role="NHANVIEN" EntitySet="NHANVIENs" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
